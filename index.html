@@ -1,0 +1,39 @@
+<body>
+  <div class="box">
+
+    <h1>Generate DID (Key-Based)</h1>
+    <p>This page creates a DID using a cryptographic keypair generated in the browser.</p>
+
+    <button id="generate">Generate DID</button>
+    <button id="regen">Regenerate</button>
+    <button id="copy">Copy DID</button>
+
+    <h3>Your DID</h3>
+    <input id="didField" readonly>
+
+    <h3>Public Key (JWK)</h3>
+    <pre id="publicKeyBox"></pre>
+
+    <!-- ⭐ STEP 2 — CID Input -->
+    <h2>Step 2 — Add Your IPFS CID</h2>
+    <input id="cidField" placeholder="entre your cidField ">
+
+    <!-- ⭐ STEP 3 — VC Generator -->
+    <h2>Step 3 — Generate Verifiable Credential (VC)</h2>
+
+    <label>Document Name</label>
+    <input id="docName" placeholder="e.g., Degree Certificate">
+
+    <label>Issuer Name</label>
+    <input id="issuerName" value="My College">
+
+    <button id="generateVCBtn">Generate VC</button>
+
+    <h3>Your VC</h3>
+    <pre id="vcOutput"></pre>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
